@@ -7,13 +7,10 @@ export const AgregarTarea = ({agregarTarea}) => {
   }
 
   const onSubmit = (e) => {
-    const envio = {
-      nombre: InputValue,
-      visto: false
-    }
-    e.preventDefault()
-    agregarTarea(tareas => [...tareas, envio])
+    e.preventDefault();
+    agregarTarea(InputValue);
   }
+
   return (
     <form onSubmit={onSubmit}>
       <input
