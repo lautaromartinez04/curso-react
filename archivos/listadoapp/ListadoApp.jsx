@@ -34,7 +34,7 @@ export const ListadoApp = () => {
   const [Arreglo, setArreglo] = useState(listadoSecciones);
 
   const  onAddTask = (val) => {
-    let val = val.trim();
+    val = val.trim();
     if (val<1) return
     const envio = {
       id: Arreglo.length + 1,
@@ -44,7 +44,6 @@ export const ListadoApp = () => {
     setArreglo([...Arreglo, envio]);
   }
 
-  console.log(Arreglo);
   return (
     <>
       <h1>Listado de temas del curso</h1>
