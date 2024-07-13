@@ -9,9 +9,6 @@ export const CallBackComponent = () => {
         setCounter( contador=> contador + val)
     }, [])
 
-    
-    
-    
   return (
     <>  
     <h1>contador: {counter}</h1>
